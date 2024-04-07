@@ -1,0 +1,53 @@
+<VirtualHost fun-in-jail.ctf:80>
+    ServerName fun-in-jail.ctf
+    # Proxy .php requests to port 9000 of the php-fpm container
+    #ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://php:9000/var/www/html/fun-in-jail/$1
+    DocumentRoot /var/www/html/fun-in-jail/
+    <Directory /var/www/html/fun-in-jail/>
+        DirectoryIndex index.php
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    # Send apache logs to stdout and stderr
+    CustomLog /proc/self/fd/1 common
+    ErrorLog /proc/self/fd/2
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$
+    RewriteRule ^(.*)$ http://fun-in-jail.ctf:897$1 [L,R=301]
+</VirtualHost>
+
+<VirtualHost secret-barbapapa-addicts.ctf:80>
+    ServerName secret-barbapapa-addicts.ctf
+    # Proxy .php requests to port 9000 of the php-fpm container
+    #ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://php:9000/var/www/html/secret-site/$1
+    DocumentRoot /var/www/html/secret-site/
+    <Directory /var/www/html/secret-site>
+        DirectoryIndex index.php
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    # Send apache logs to stdout and stderr
+    CustomLog /proc/self/fd/1 common
+    ErrorLog /proc/self/fd/2
+</VirtualHost>
+
+
+<VirtualHost *:80>
+    # Proxy .php requests to port 9000 of the php-fpm container
+    #ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://php:9000/var/www/html/secret-site/$1
+    DocumentRoot /var/www/html/nothing
+    <Directory /var/www/html/nothing/>
+        DirectoryIndex index.php
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+    
+    # Send apache logs to stdout and stderr
+    CustomLog /proc/self/fd/1 common
+    ErrorLog /proc/self/fd/2
+</VirtualHost>

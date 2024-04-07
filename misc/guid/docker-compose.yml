@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend:
+    image: guid-back:latest
+    ports:
+      - "3000:3000"
+  
+  frontend:
+    image: guid-front:latest
+    ports:
+      - "4200:4200"

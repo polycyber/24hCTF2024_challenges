@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Book Search - HiveHex Penitentiary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="logo-container">
+    <img id="logo" src="logo.webp" alt="Book Search - HiveHex Penitentiary">
+    <h1 data-localize="headerTitle">Book Search - HiveHex Penitentiary</h1>
+</div>
+
+<div id="search-container">
+    <form action="search.php" method="get">
+        <input type="text" name="query" data-localize="searchPlaceholder" placeholder="Search for a book...">
+        <input type="submit" data-localize="searchButton" value="Search">
+    </form>
+</div>
+
+
+<!-- The upload page is disabled during maintenance. -->
+<!-- <a href="upload.php" data-localize="uploadLink">Add a book</a> -->
+
+<!-- Language selection buttons -->
+<br />
+<div id="language-selector">
+    <button onclick="changeLanguage('en')">EN</button>
+    <button onclick="changeLanguage('fr')">FR</button>
+</div>
+
+<!-- Link to the language switching JavaScript -->
+<script src="language.js"></script>
+
+</body>
+</html>

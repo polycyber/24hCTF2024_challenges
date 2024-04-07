@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Administration - Pénitencier de HiveHex",
+    "headerTitle": "Recherche de livres - Pénitencier de HiveHex",
+    "searchPlaceholder": "Recherchez un livre...",
+    "searchButton": "Rechercher",
+    "uploadLink": "Ajouter un livre",
+    "maintenanceNote": "La page d'upload est désactivée pour la durée de la maintenance.",
+    "greeting": "Bonjour M. Dewey",
+    "loginPrompt": "Se connecter",
+    "adminTitle": "Administration - Pénitencier de HiveHex",
+    "addBook": "Ajouter un livre",
+    "uploadButton": "Uploader",
+    "usernameLabel": "Nom d'utilisateur:",
+    "passwordLabel": "Mot de passe:",
+    "loginButton": "Connexion",
+    "error": "Erreur",
+    "success": "Succès",
+    "incorrectCredentials": "Identifiants incorrects.",
+    "fileUploadError": "Erreur lors de l'upload du fichier.",
+    "fileUploadSuccess": "Fichier uploadé avec succès. Chemin : /uploads/"
+}

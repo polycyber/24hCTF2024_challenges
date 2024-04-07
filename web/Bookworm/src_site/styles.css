@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#logo-container {
+    margin: 30px 0;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+}
+
+#search-container, #upload-container, #login-container {
+    background: rgba(255, 255, 255, 0.1); /* Slightly see-through */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="submit"] {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background: #272727;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #e0e0e0;
+}
+
+input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e65c00;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #1e1e1e;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.error {
+    color: #ff5555;
+}
+
+#language-selector button {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#language-selector button:hover {
+    background-color: #ff6600;
+}
+
+/* Add a consistent and professional font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Styles généraux pour les boîtes de message */
+.message-box {
+    width: 90%;
+    max-width: 600px; /* Taille maximale de la boîte */
+    margin: 20px auto; /* Centrer la boîte */
+    padding: 20px;
+    border-radius: 8px; /* Bords arrondis */
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+    position: relative; /* Pour positionner absolument les boutons ou icônes à l'intérieur si nécessaire */
+}
+
+/* Styles spécifiques pour les messages de succès */
+.success-box {
+    background-color: #4CAF50; /* Vert pour le succès */
+    color: white; /* Texte blanc pour un bon contraste */
+}
+
+/* Styles spécifiques pour les messages d'erreur */
+.error-box {
+    background-color: #f44336; /* Rouge pour l'erreur */
+    color: white; /* Texte blanc pour un bon contraste */
+}
+
+/* Styles pour les boutons de fermeture sur les boîtes de message */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Effet au survol pour les boutons de fermeture */
+.close-btn:hover {
+    color: #ddd;
+}

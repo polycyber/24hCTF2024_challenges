@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Administration - HiveHex Penitentiary",
+    "headerTitle": "Book Search - HiveHex Penitentiary",
+    "searchPlaceholder": "Search for a book...",
+    "searchButton": "Search",
+    "uploadLink": "Add a book",
+    "maintenanceNote": "The upload page is disabled during maintenance.",
+    "greeting": "Hello Mr. Dewey",
+    "loginPrompt": "Login",
+    "adminTitle": "Administration - HiveHex Penitentiary",
+    "addBook": "Add a Book",
+    "uploadButton": "Upload",
+    "usernameLabel": "Username:",
+    "passwordLabel": "Password:",
+    "loginButton": "Login",
+    "error": "Error",
+    "success": "Success",
+    "incorrectCredentials": "Incorrect credentials.",
+    "fileUploadError": "Error uploading the file.",
+    "fileUploadSuccess": "File uploaded successfully. Path: /uploads/"
+}

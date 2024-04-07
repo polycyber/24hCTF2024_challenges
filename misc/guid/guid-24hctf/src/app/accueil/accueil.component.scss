@@ -1,0 +1,78 @@
+.coupon-banner {
+  background: #865903;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+}
+
+.field-banner {
+  background: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+.footer-banner {
+  background: #211800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  align-items: center;
+}
+
+.size-gif {
+  height: 200px;
+}
+
+button {
+  margin: 0 10px 0 10px;
+  width: auto;
+  border: solid darkblue;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.footer-text {
+  color: #211800;
+}
+
+input {
+  outline: none;
+  margin-top: 5px;
+  width: 500px;
+  border: 0;
+  float: left;
+  padding: 8px;
+  background: none;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.language-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 48px;
+}

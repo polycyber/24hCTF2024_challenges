@@ -1,0 +1,61 @@
+<div *ngIf="language === 'fr'">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Syne&display=swap');
+  </style>
+
+  <div class="coupon-banner">
+    <div class="title">🍱 Distributeur de coupon de cafétéria 🍱</div>
+  </div>
+
+  <div class="field-banner">
+    <p>Ce site web sert à offrir des coupons rabais pour la cafétéria de la prison. Si vous êtes sage vous avez reçu un code à usage unique que vous pouvez vérifier ici.</p>
+    <p>Nos codes sont tous uniques et utilisent la version la plus sécuritaire des identifiants uniques!</p>
+    <div>
+        <input class="coupon-entry" [(ngModel)]="coupon" placeholder="Entrez votre code unique">
+        <button (click)="submitCoupon()">Obtenir mon coupon rabais!</button>
+    </div>
+    <div>
+      <img src="assets/prison-food.gif" class="size-gif">
+    </div>
+  </div>
+
+  <div class="footer-banner">
+    <p>Tous les droits réservés
+    </p>
+    <div class="footer-text">{{flag4+flag1+flag2+flag3}}</div>
+    <div class="footer-text">NOTE: SVP redéployer le site chaque mois pour mettre à jour la liste des GUID utilisés dans /guid</div>
+  </div>
+</div>
+
+<div *ngIf="language === 'en'">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Syne&display=swap');
+  </style>
+  
+  <div class="coupon-banner">
+    <div class="title">🍱 Cafeteria Coupon Distributor 🍱</div>
+  </div>
+  
+  <div class="field-banner">
+    <p>This website is designed to offer discount coupons for the prison cafeteria. If you behave well, you have received a unique-use code that you can check here.</p>
+    <p>Our codes are all unique and use the most secure version of unique identifiers!</p>
+    <div>
+      <input class="coupon-entry" [(ngModel)]="coupon" placeholder="Enter your unique code">
+      <button (click)="submitCoupon()">Get my discount coupon!</button>
+    </div>
+    <div>
+      <img src="assets/prison-food.gif" class="size-gif">
+    </div>
+  </div>
+  
+  <div class="footer-banner">
+    <p>All rights reserved</p>
+    <div class="footer-text">{{flag4+flag1+flag2+flag3}}</div>
+    <div class="footer-text">NOTE: Please redeploy the site each month to update the list of GUIDs used in /guid</div>
+  </div>  
+</div>
+
+<div class="language-switch">
+  <button *ngIf="language === 'en'" (click)="switchLanguage()">Français</button>
+  <button *ngIf="language === 'fr'" (click)="switchLanguage()">English</button>
+</div>

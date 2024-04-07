@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package doorman;
+
+message LoginBody {
+  string username = 1;
+  bytes password = 2;
+  string otp = 3;
+}
+
+message DoorBody {
+  uint32 id = 1;
+  bool should_unlock = 2;
+}
+
+message LogsBody {
+  optional string id = 1;
+  optional bool should_list = 2;
+}
+
+message NotifyBody {
+  bytes notification = 1;
+  string host = 2;
+}
+
+enum RequestType {
+  REQUEST_LOGIN = 0;
+  REQUEST_DOOR = 1;
+  REQUEST_LOGS = 2;
+  REQUEST_NOTIFY = 3;
+}
+
+message Request {
+  RequestType type = 1;
+  oneof body {
+    LoginBody body_login = 2;
+    DoorBody body_door = 3;
+    LogsBody body_logs = 4;
+    NotifyBody body_notify = 5;
+  }
+}
+
+message Response {
+  bool is_error = 1;
+  string message = 2;
+}
