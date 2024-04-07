@@ -4,7 +4,7 @@
 
 ### Etape 1 : Découverte du site
 
-En se connectant à l'adresse donnée, on est redirigé vers "fun-in-jail.ctf". Il faut l'ajouter à notre `/etc/hosts` sur Linux (`C:\Windows\System32\drivers\etc\hosts` sur Windows)
+En se connectant à l'adresse donnée, on est redirigé vers "fun-in-jail.ctf". Il faut l'ajouter à notre `/etc/hosts` sur Linux (`C:\Windows\System32\drivers\etc\hosts` sur Windows). Si ça n'arrive pas directement, la redirection aura lieu à l'étape 2.
 
 ### Etape 2 : Trouver un point d'entrée
 
