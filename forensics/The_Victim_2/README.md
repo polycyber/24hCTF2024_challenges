@@ -8,7 +8,7 @@ Tu as reussi à accéder au contenu du fichier! Ton partenaire de cellule aurait
 
 Le directeur du HiveHex Penitentiary aimerait particulièrement les photos de prisons...
 
-**Les fichiers du défi ne devraient pas être corrompus.**
+**Le fichier de ce défi n'est plus disponible étant donné qu'il était trop lourd.**
 
 ## Description EN
 
@@ -16,7 +16,7 @@ You've managed to access the file's content! Your cellmate heard a rumor that Hi
 
 HiveHex Penitentiary's director has a special liking for prison photos...
 
-**The challenge's files should not be corrupted.**
+**The file for this challenge is no longer available as it was too large.**
 
 ## Solution
 
